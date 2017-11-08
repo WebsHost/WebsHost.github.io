@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+To Do:
+2. Make Tabs text
+8. Make favs.html page?
+9. Implement the favs option into the webpages?
+13. Add text to footer
+14. Make footer height auto?
+-->
+	<title>Welcome to Dubai!</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="icon" href="Images/logo.png"/>
+	<script language="javascript" src="script.js"></script>
+</head>
+<body onload="changeTab('dubaimall')" style="background-repeat: no-repeat; background-size: cover; background-attachment: fixed; margin: 0px;" background="Images\SkylineBackground.jpeg">
+<!-- Nav Bar -->
+<div class="navbar">
+   <div class="dropdown">
+    <button class="dropbtn"><a href="index.html">Home</a></button>
+   </div>
+  <div class="dropdown">
+    <button class="dropbtn"><a href="food.html">Food</a></button>
+    <div class="dropdown-content">
+      <a href="indian.html">Indian</a>
+      <a href="chinese.html">Chinese</a>
+      <a href="italian.html">Italian</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn"><a href="malls.html">Malls</a></button>
+    <div class="dropdown-content">
+      <a href="dubaimall.html">Dubai Mall</a>
+      <a href="moe.html">Mall of the Emirates</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn"><a href="sports.html">Sports</a></button>
+    <div class="dropdown-content">
+      <a href="tennis.html">Tennis</a>
+      <a href="badminton.html">Badminton</a>
+    </div>
+  </div> 
+   <div class="dropdown">
+    <button class="dropbtn"><a href="rubiks.html">Rubik's Cube</a></button>
+   </div>   
+   <div class="dropdown">
+    <button class="dropbtn"><a href="entertainment.html">Entertainment</a></button>
+   </div>   
+   <div class="dropdown">
+    <button class="dropbtn"><a href="events.html">Events</a></button>
+   </div>
+   <a style="float: right;" href="favs.html"><img style="height: 25px; width: 25px;" src="Images\unfav.png"></a>
+</div>
+<!-- Landing Page -->
+<div style="margin: 8px;">
+<div class="landing">
+<img src="Images\logo.png">
+<h5>The DEEA's (Dubai Encyclopedia for Events and Attractions) official website!</h5>
+</div></div>
+<div style="background-color: white; width: 100%; border-top: 2px solid; border-bottom: 2px solid;">
+<br />
+<!-- Mid-Section -->
+<div id="wrapper">
+		<div>
+	  		<a style="text-decoration: none;" href="italian.html"><figure>
+		    	<img src="Images/Italian-Restaurant.jpeg">
+		    	<figcaption><div><br><br><br><br><br><br><br>Italian Restaurants</div></figcaption>
+	 		</figure></a>
+	 		<a style="text-decoration: none;" href="tennis.html"><figure>
+		    	<img src="Images/Tennis-Background.jpg">
+		    	<figcaption><div><br><br><br><br><br><br><br>Tennis</div></figcaption>
+	  		</figure></a>
+	 		<a style="text-decoration: none;" href="dubaimall.html"><figure>
+		    	<img src="Images/dubai-mall-outside.png">
+		    	<figcaption><div><br><br><br><br><br><br><br>Dubai Mall</div></figcaption>
+		  	</figure></a>
+		</div>
+</div>
+<br />
+<!-- Tabs -->
+<div class="tab">
+  <button onclick="changeTab('dubaimall')" id="defaultOpen">Dubai Mall</button>
+  <button onclick="changeTab('moe')">Mall of the Emirates</button>
+  <button onclick="changeTab('indian')">Indian Restaurants</button>
+  <button onclick="changeTab('italian')">Italian Restaurants</button>
+  <button onclick="changeTab('chinese')">Chinese Restaurants</button>
+  <button onclick="changeTab('badminton')">Badminton</button>
+  <button onclick="changeTab('tennis')">Tennis</button>
+  <button onclick="changeTab('rubiks')">Rubik's Cube</button>
+<div id="dubaimall" class="tabcontent">
+<hr>
+  <h3>Dubai Mall</h3>
+  <a href="dubaimall.html"><img src="Images\dubai-mall-outside.png"></a>
+  <p>Dubai Mall is the biggest shopping mall in the world by total area, if you're a shopaholic you'll find Dubai Mall to be shopping heaven!
+  The Dubai Mall is located at the foot of the Burj Khalifa and stretches a total of 1.1 million square meters! It has something for everyone!
+  There is entertainment, leisure, shopping, eating, and so much more! With over 1,200 retail outlets, waterfalls, the Dubai Aquarium, theme parks 
+  (yes, inside a mall) and its own ice rink (again yes, inside a mall!). It's impossible to have nothing to do!</p>
+</div>
+<div id="moe" class="tabcontent">
+<hr>
+  <h3>Mall of The Emirates</h3>
+  <a href="moe.html"><img src="Images\Mall-of-the-Emirates-Outside.jpg"></a>
+  <p>The Mall of The Emirates isn't the biggest mall, but don't let that get your hopes down - it's still MASSIVE! Boasting an entire indoor ski slope
+  called "Ski Dubai", that is the first snow park and ski resort in the Middle East! It also contains a 14 screen VOX multiplex, a Magic Planet family entertainment area,
+  the largest carrefour in Dubai and much, much more...</p>
+</div>
+<div id="indian" class="tabcontent">
+<hr>
+  <h3>Indian Restaurant</h3>
+  <a href="indian.html"><img src="Images\Indian-Restaurant.jpg"></a>
+  <p>Dubai has a rich history thanks to the large number immigrants, thanks to this Dubai has a range of great and authentic Indian Restaurants to choose from.
+  Take your pick from a variety of Indian restaurants all throughout Dubai, there may even be a few right next to you!</p>
+</div>
+<div id="italian" class="tabcontent">
+<hr>
+  <h3>Italian Restaurant</h3>
+  <a href="italian.html"><img src="Images\Italian-Restaurant.jpeg"></a>
+  <p>When Italian immigrants first came to Dubai it was said that they were outraged that there was no authentic Italian pizza and pasta, luckily for you, by now there are
+  hundreds scattered all around Dubai! If you know where to look you can get the best pizza you've ever tasted (it will take you right back to Italy!)... or you can just
+  find them using our services!</p>
+</div>
+<div id="chinese" class="tabcontent">
+<hr>
+  <h3>Chinese Restaurant</h3>
+  <a href="chinese.html"><img src="Images\Chinese-Restaurant.jpg"></a>
+  <p>Chinese restaurants are a favourite amongst everyone, especially in Dubai, with restaurants everywhere it can be hard to find one that is tasty and right for you! 
+  With our service you can not only easily locate a restaurant close to you, but also sift through reviews from other users to find the best quality food possible!
+</p>
+</div>
+<div id="badminton" class="tabcontent">
+<hr>
+  <h3>Badminton</h3>
+  <a href="badminton.html"><img src="Images\Badminton-Background.jpg"></a>
+  <p>With all the food available in Dubai it's easy to get carried away, so why not take a break and burn some calories whilst having some fun with the great sports available in Dubai!
+  I'm talking about badminton! there are plenty of courts all around Dubai, some of them are even free to use whenever you want! no need to waste time or money, whenever you want to 
+  play a quick game or even an impromptu tournament between friends, just look it up at DEEA - we've got you covered!
+</p>
+</div>
+<div id="tennis" class="tabcontent">
+<hr>
+  <h3>Tennis</h3>
+  <a href="tennis.html"><img src="Images\Tennis-Background.jpg"></a>
+  <p>Tennis is another one of the great sports available to try out in dubai, potentially for free! We can recommend the best facilities from battle tested reviewers across Dubai!
+  Our team will point you in the right direction to give you the best experience you can possibly have whilst in Dubai!
+</p>
+</div>
+<div id="rubiks" class="tabcontent">
+<hr>
+  <h3>Rubik's Cube</h3>
+  <a href="rubiks.html"><img src="Images\Rubiks-Cube.jpeg"></a>
+  <p>A personal passion, thankfully many rubik's cube competitions occur across the globe, and Dubai is no different - check back regularly to find out when and where they are on
+  and how to sign up! We wish you luck!</p>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<br />
+<div class="footer">
+<br />
+<br />
+<p>Webpages created by: Andrew ffrench (10F)</p>
+<p>Last Edited on Wednesday, the 1st of November, 2017</p>
+</div>
+</body>
+</html>

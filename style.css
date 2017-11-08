@@ -1,0 +1,228 @@
+.navbar {
+    overflow: hidden;
+    background-color: #000000;
+    font-family: Arial;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	z-index: 10;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 15px 25.7px;
+    text-decoration: none;
+	height: 25px;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px 30px;
+    background-color: inherit;
+}
+.dropbtn {
+	min-width: 100px;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f2f2f2;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	min-width: 150px;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #e2e0e0;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.landing {
+	background-repeat: no-repeat;
+	height: 635px;
+}
+.landing p {
+	font-size: 40px;
+	font-weight: bold;
+	padding-top: 280px;
+	text-align: center;
+	color: white;
+}
+.landing img {
+	padding-top: 200px;
+	padding-left: 500px;
+	max-height:40% ;
+	max-width:40% ;
+	position: fixed;
+	z-index: -1;
+}
+.favButton {
+	height: 75px;
+	width: 75px;
+	padding-top: 0px;
+	float: right;
+}
+.landing h5 {
+	align: center;
+	padding-top: 420px;
+	padding-left: 400px;
+	color: white;
+	font-weight: bold;
+	position: fixed;
+	z-index: -1;
+}
+.landing h2 {
+	padding-top: 500px;
+	padding-left: 50px;
+	font-size: 70px;
+	color: white;
+	padding-bottom: 0px;
+}
+.MainBodyText {
+	border-radius: 20px;
+	width: 80%;
+	margin-left: 8%;
+	margin-right: 8%;
+	padding: 30px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	height: auto;
+	background-color: white;
+	font-size: 20px;
+}
+#wrapper img {
+    width: 100%;
+    height: 100%;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+	border-top: 2px solid
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+	border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.2s;
+    font-size: 18.8px;
+}
+.tab button:hover {
+    background-color: #ddd;
+	border: none;
+}
+.tab button.active {
+    background-color: #ccc;
+	border: none;
+}
+.tabcontent img {
+	float: left;
+	height: 50%;
+	width: 50%;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	border-radius: 30px;
+}
+.tabcontent h3 {
+	padding-top: 40px;
+	font-size: 30px;
+}
+.tabcontent hr {
+	width: 100%;
+	float: left;
+	margin: 0px;
+}
+.tabcontent p {
+	margin: 0px;
+	padding: 10px;
+	font-size: 25px;
+}
+#dubaimall, #moe, #indian, #italian, #chinese, #badminton, #tennis, #rubiks, #events {
+    display: none;
+    padding: 5px 10px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+Figure{
+  width: 30%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 0px;
+  text-align: center;
+  background: center center;
+  position: inline;
+  margin-left: 12px;
+  margin-right: 12px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+figcaption{
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  text-transform: uppercase;
+}
+figure img{
+  -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+figure:hover figcaption{
+	background: rgba(255,255,255,0.6);
+	opacity: 1;
+	top: 0;
+}
+figure:hover img{
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+          transform: scale3d(1.2, 1.2, 1);
+}
+#wrapper {
+  text-align: center;
+}
+#wrapper p {
+	font-size: 30px;
+}
+.footer {
+	height: 166px;
+	background-color: #888;
+	padding-top: 20px;
+}
